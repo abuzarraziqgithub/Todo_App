@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #ffff;
+}
+.container {
+  border: solid 2px brown;
+  width: 60%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo_app {
+  border: solid 2px yellowgreen;
+  height: 80%;
+  padding: 8px;
+}
+#todoInput {
+  padding: 2px;
+}
+
+.listBox ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.listBox ul li {
+  list-style-type: none;
+  padding: 2px;
+}
