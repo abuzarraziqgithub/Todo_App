@@ -1,39 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 body {
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #000000;
   height: 100vh;
-  color: #ffff;
-}
-.container {
-  border: solid 2px brown;
-  width: 60%;
-  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .todo_app {
-  border: solid 2px yellowgreen;
-  height: 80%;
+  height: 50%;
+  width: 40%;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
 }
-#todoInput {
-  padding: 2px;
+.input_addBtn_box {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+#addBtn {
+  width: 15%;
+  background-color: #3d90d7;
+  border: none;
+  border-radius: 2px;
+  color: #e9dfc3;
+  cursor: pointer;
+  transition: all 200ms;
 }
 
+#addBtn:hover {
+  background-color: #3d92e88e;
+}
+
+#deleteBtn {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff2929;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+#deleteBtn:hover {
+  background-color: #e4003a;
+}
+
+#todoInput {
+  padding: 10px;
+  width: 85%;
+  outline: none;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 2px;
+  border: none;
+  color: #3b3030;
+  background-color: #f1f0e8;
+}
+
+.listBox {
+  display: flex;
+  width: 100%;
+}
 .listBox ul {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
   margin-top: 10px;
+  flex-direction: column;
+  /* background-color: aqua; */
+  gap: 15px;
 }
 .listBox ul li {
   list-style-type: none;
   padding: 2px;
+  background-color: #3b3030;
+  color: #d2daff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
