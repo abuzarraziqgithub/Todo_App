@@ -13,12 +13,13 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: self-start;
 }
 .todo_app {
   height: 50%;
   width: 40%;
   padding: 8px;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -44,6 +45,7 @@ body {
 #deleteBtn {
   width: 10%;
   display: flex;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   background-color: #ff2929;
@@ -51,9 +53,10 @@ body {
   border: none;
   cursor: pointer;
   transition: all 200ms;
+  color: #d2daff;
 }
 #deleteBtn:hover {
-  background-color: #e4003a;
+  background-color: #7d0a0a;
 }
 
 #todoInput {
@@ -90,4 +93,5 @@ body {
   padding: 15px;
   margin-top: 5px;
   border-radius: 5px;
+  font-size: large;
 }
