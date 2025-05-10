@@ -23,6 +23,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+.todo_app h1 {
+  color: #d2daff;
+  background-color: #ff2929;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
 .input_addBtn_box {
   display: flex;
   width: 100%;
@@ -40,23 +49,6 @@ body {
 
 #addBtn:hover {
   background-color: #3d92e88e;
-}
-
-#deleteBtn {
-  width: 10%;
-  display: flex;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff2929;
-  border-radius: 2px;
-  border: none;
-  cursor: pointer;
-  transition: all 200ms;
-  color: #d2daff;
-}
-#deleteBtn:hover {
-  background-color: #7d0a0a;
 }
 
 #todoInput {
@@ -94,4 +86,21 @@ body {
   margin-top: 5px;
   border-radius: 5px;
   font-size: large;
+}
+
+ul li button {
+  width: 10%;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff2929;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+  color: #d2daff;
+}
+ul li button:hover {
+  background-color: #7d0a0a;
 }
